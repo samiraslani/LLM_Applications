@@ -6,11 +6,11 @@ This project is a fully functional Telegram bot that fetches the latest BBC news
 
 ## 🚀 Features
 
-- 🔍 Scrapes the BBC News homepage to retrieve the latest headlines.
-- 🧠 Summarizes full articles using OpenAI's `gpt-4o-mini` model.
-- 🤖 Responds to Telegram users when they send the word "news".
-- 📎 Sends links to the original articles along with intelligent summaries.
-- 🛡️ Handles edge cases and errors gracefully, skipping broken or unparseable articles.
+- Scrapes the BBC News homepage to retrieve the latest headlines.
+- Summarizes full articles using OpenAI's `gpt-4o-mini` model.
+- Responds to Telegram users when they send the word "news".
+- Sends links to the original articles along with intelligent summaries.
+- Handles edge cases and errors gracefully, skipping broken or unparseable articles.
 
 ---
 
@@ -27,7 +27,7 @@ This project is a fully functional Telegram bot that fetches the latest BBC news
 
 ---
 
-## 🧱 Tech Stack
+## Tech Stack
 
 - Python 3.11+
 - [python-telegram-bot (v20+)](https://github.com/python-telegram-bot/python-telegram-bot)
@@ -37,7 +37,7 @@ This project is a fully functional Telegram bot that fetches the latest BBC news
 
 ---
 
-## 📦 Setup Instructions
+## Setup Instructions
 
 1. **Clone this repo**:
     ```bash
@@ -72,27 +72,17 @@ This project is a fully functional Telegram bot that fetches the latest BBC news
 
 ---
 
-## 🧠 Future Roadmap
 
-- [ ] Add support for other news websites (e.g., CNN, Al Jazeera).
-- [ ] Schedule daily updates to subscribed users.
-- [ ] Integrate Google Calendar to summarize daily events (planned).
-- [ ] Add language translation and voice support.
-
----
-
-## 📄 License
+## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🙌 Contributing
+## Contributing
 
 Pull requests and feature suggestions are welcome. For major changes, please open an issue first to discuss what you’d like to change.
 
 ---
 
-## ✨ Credits
 
-Built with ❤️ by [Your Name](https://github.com/yourusername). Powered by OpenAI and Telegram.
