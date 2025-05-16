@@ -41,7 +41,7 @@ This project is a fully functional Telegram bot that fetches the latest BBC news
 ## 🖼️ Demo
 
 <p align="center">
-  <img src="demo.gif" alt="Telegram bot demo" width="1000">
+  <img src="demo.gif" alt="Telegram bot demo" width="800">
 </p>
 
 
