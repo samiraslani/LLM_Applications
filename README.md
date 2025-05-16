@@ -35,6 +35,17 @@ This project is a fully functional Telegram bot that fetches the latest BBC news
 - `requests` and `beautifulsoup4` for web scraping
 - Async I/O for efficient message handling
 
+
+---
+
+## 🖼️ Demo
+
+<p align="center">
+  <img src="demo.gif" alt="Telegram bot demo" width="600">
+</p>
+
+
+
 ---
 
 ## Setup Instructions
@@ -61,17 +72,7 @@ This project is a fully functional Telegram bot that fetches the latest BBC news
     ```bash
     python bot.py
     ```
-
----
-
-## 🖼️ Demo
-
-<p align="center">
-  <img src="demo.gif" alt="Telegram bot demo" width="400">
-</p>
-
----
-
+--- 
 
 ## License
 
