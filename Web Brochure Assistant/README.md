@@ -20,7 +20,7 @@ Given a company URL, the system:
 
 ---
 
-## 🧠 Key Concepts
+## Key Concepts
 
 ### Agentic Thinking
 
@@ -36,7 +36,7 @@ This mimics how **AI agents** plan and act in multiple steps toward a goal.
 
 ---
 
-### 🤖 OpenAI API Usage
+### OpenAI API Usage
 
 The system communicates with GPT using **multi-turn chat messages**:
 
@@ -54,43 +54,22 @@ You can choose between:
 
 ---
 
-## How to Use
-
-1. Clone this repo and add your OpenAI API key to a `.env` file:
-    ```env
-    OPENAI_API_KEY=your_key_here
-    ```
-
-2. Run the notebook:
-    ```python
-    from openai import OpenAI
-    from Website import Website
-
-    get_brochure_user_prompt("BBC", "https://www.bbc.com")
-    ```
-
-3. Modify the prompt, model (e.g., `gpt-4o`), or link parser as needed.
-
-
----
-
-## 💼 Positioning
+##  Positioning
 
 This tool can serve as:
 - A **sales assistant** for agencies building company brochures.
 - A **content strategy generator** for marketing teams.
 - A **scouting tool** for partnerships and investor research.
-- A **knowledge organizer** for product managers.
 
 ---
 
-## 👨‍💻 Requirements
+##  Requirements
 
 - Python 3.8+
 - `openai`, `beautifulsoup4`, `requests`, `dotenv`
 
 ---
 
-## 📣 Contact
+##  Contact
 
 For questions, suggestions, or collaboration ideas, reach out to me at shirinamiraslani@gmail.com.
