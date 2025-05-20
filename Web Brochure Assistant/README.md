@@ -14,7 +14,7 @@ Given a company URL, this system:
    - Understand the site context.
    - Choose only the most relevant subpages (e.g., About, Services, Contact).
 4. Optionally gathers content from the selected links.
-5. Constructs a brochure prompt or markdown-ready summary using the filtered information.
+5. Constructs a brochure in markdown format using the filtered information.
 
 ---
 
@@ -24,8 +24,10 @@ Given a company URL, this system:
 
 This architecture mirrors the **agentic workflow**:
 - The assistant receives context (`Website` class).
-- It makes decisions (`link filtering`).
-- It takes actions (`fetch content`, `build brochure`).
+- Extracts all the relevant links from the main website. 
+- It makes decisions on which links might be useful for generating a brochure (`link filtering`).
+- Takes actions to fetch the content of subsequent relevant links.
+- Generate a brochure given the main company links and other useful links (e.g., About, Services, Contact).
 This is similar to how **AI agents** plan and act across multiple steps.
 
 ### OpenAI API Usage
@@ -34,8 +36,7 @@ The system sends **multi-turn chat messages** to GPT:
 - `system_prompt`: Sets behavior (e.g., "You are a helpful assistant for filtering links").
 - `user_prompt`: Gives specific input (e.g., site links and goal).
 This results in multiple API calls when:
-- The site is parsed.
-- Content for each subpage is gathered.
+- The links are filtered.
 - Final brochure summary is generated.
 
 You can choose between:
