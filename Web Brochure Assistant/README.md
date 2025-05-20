@@ -1,43 +1,52 @@
 # 📄 Web Brochure Assistant using OpenAI GPT
 
-This project creates a **smart assistant** that builds brochures for companies based on the structure and content of their websites. It uses web scraping, prompt engineering, and the OpenAI GPT model to intelligently select which web pages are most useful for a brochure.
+This project builds a **smart assistant** that generates professional brochures for companies based on the structure and content of their websites. It combines **web scraping**, **prompt engineering**, and the **OpenAI GPT model** to intelligently select the most relevant web pages for brochure content.
 
 ---
 
 ## 🔍 What It Does
 
-Given a company URL, this system:
+Given a company URL, the system:
 
-1. Scrapes the main content and all subpage links using `BeautifulSoup`.
-2. Crafts a **system prompt** and a **user prompt** with structured instructions.
-3. Calls the **OpenAI API** with those prompts to:
-   - Understand the site context.
-   - Choose only the most relevant subpages (e.g., About, Services, Contact).
-4. Optionally gathers content from the selected links.
-5. Constructs a brochure in markdown format using the filtered information.
+1. Scrapes the main content and subpage links using `BeautifulSoup`.
+2. Constructs structured prompts:
+   - **System prompt**: Sets the assistant's behavior.
+   - **User prompt**: Supplies specific task instructions and content.
+3. Uses the **OpenAI GPT API** to:
+   - Understand the site's context.
+   - Select only the most relevant subpages (e.g., About, Services, Contact).
+4. Optionally fetches and processes content from the selected subpages.
+5. Generates a **markdown brochure** using the curated content.
 
 ---
 
-## Key Concepts
+## 🧠 Key Concepts
 
 ### Agentic Thinking
 
-This architecture mirrors the **agentic workflow**:
-- The assistant receives context (`Website` class).
-- Extracts all the relevant links from the main website. 
-- It makes decisions on which links might be useful for generating a brochure (`link filtering`).
-- Takes actions to fetch the content of subsequent relevant links.
-- Generate a brochure given the main company links and other useful links (e.g., About, Services, Contact).
-This is similar to how **AI agents** plan and act across multiple steps.
+The architecture mirrors an **agent-like workflow**:
 
-### OpenAI API Usage
+- The assistant receives context using a `Website` class.
+- It extracts and evaluates all internal links from the main website.
+- It **decides** which links are useful for brochure generation (link filtering).
+- It takes **actions** by fetching and summarizing content from those relevant links.
+- It **generates** a final brochure based on the gathered information.
 
-The system sends **multi-turn chat messages** to GPT:
-- `system_prompt`: Sets behavior (e.g., "You are a helpful assistant for filtering links").
-- `user_prompt`: Gives specific input (e.g., site links and goal).
-This results in multiple API calls when:
-- The links are filtered.
-- Final brochure summary is generated.
+This mimics how **AI agents** plan and act in multiple steps toward a goal.
+
+---
+
+### 🤖 OpenAI API Usage
+
+The system communicates with GPT using **multi-turn chat messages**:
+
+- `system_prompt`: Defines behavior (e.g., *“You are a helpful assistant for filtering links”*).
+- `user_prompt`: Provides detailed input (e.g., list of links, desired brochure format).
+
+This results in **multiple API calls** during:
+
+- Link filtering phase (deciding which pages matter).
+- Brochure generation phase (writing the actual content in markdown).
 
 You can choose between:
 - **One-shot prompting**: Pass all context in one go (fast, concise).
