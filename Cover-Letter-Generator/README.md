@@ -10,26 +10,24 @@ By focusing on legally accessible data (from company career pages) and keeping y
 
 ## 🚀 Features
 
-- 🌐 **Web Scraping from Official Career Pages**  
+- **Web Scraping from Official Career Pages**  
   Retrieves job postings directly from company websites using clean and robust scraping logic.
 
-- 📄 **Secure Resume Loading**  
+- **Secure Resume Loading**  
   Loads your resume locally from a `.pdf` or `.txt` file — nothing gets uploaded or shared.
 
-- 🤖 **LLM Integration**  
+- **LLM Integration**  
   Uses GPT-based models to generate clear, context-specific, professional cover letters.
 
-- 🎯 **Custom Prompt Engineering**  
+- **Custom Prompt Engineering**  
   Tailored prompts ensure the language model aligns your experience with the job role effectively.
 
-- 🔧 **Modular Design**  
-  Each component (resume loader, job scraper, prompt generator) is modular and reusable.
 
 ---
 
 ## 💡 Why This Project Stands Out
 
-| ✅ Strength | 📋 Description |
+|  Strength |  Description |
 |------------|----------------|
 | **Privacy-First** | Resume stays entirely local — not sent to any third party. |
 | **Legal Scraping** | Targets only public, accessible URLs — avoids platforms like LinkedIn. |
@@ -45,7 +43,9 @@ By focusing on legally accessible data (from company career pages) and keeping y
 ```bash
 git clone https://github.com/yourusername/cover-letter-generator.git
 cd cover-letter-generator
-## 🙌 Final Words
+
+---
+## Final Words
 In a world flooded with generic AI demos, this project offers practical value, ethical integrity, and real technical merit. It’s a robust automation tool that solves an annoying problem — and shows off your ability to use AI responsibly.
 
 If you're building your portfolio, applying for jobs, or just exploring the power of language models — this project is a solid win.
