@@ -38,12 +38,12 @@ By focusing on legally accessible data (from company career pages) and keeping y
 
 ## 🛠️ Setup Instructions
 
-1. **Clone the repository:**
+**Clone the repository:**
 
 ```bash
 git clone https://github.com/yourusername/cover-letter-generator.git
 cd cover-letter-generator
-
+```
 ---
 ## Final Words
 In a world flooded with generic AI demos, this project offers practical value, ethical integrity, and real technical merit. It’s a robust automation tool that solves an annoying problem — and shows off your ability to use AI responsibly.
