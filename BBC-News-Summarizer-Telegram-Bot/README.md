@@ -68,10 +68,6 @@ This project is a fully functional Telegram bot that fetches the latest BBC news
     OPENAI_API_KEY=your-openai-api-key
     ```
 
-4. **Run the bot**:
-    ```bash
-    python bot.py
-    ```
 --- 
 
 ## License
