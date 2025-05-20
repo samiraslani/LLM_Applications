@@ -41,8 +41,7 @@ By focusing on legally accessible data (from company career pages) and keeping y
 **Clone the repository:**
 
 ```bash
-git clone https://github.com/yourusername/cover-letter-generator.git
-cd cover-letter-generator
+git clone https://github.com/samiraslani/LLM_Applications/blob/main/Cover-Letter-Generator.git
 ```
 ---
 ## Final Words
