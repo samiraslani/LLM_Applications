@@ -1,89 +1,86 @@
-# 📰 BBC News Summarizer Telegram Bot 🤖
+# 📄 Web Brochure Assistant using OpenAI GPT
 
-This project is a fully functional Telegram bot that fetches the latest BBC news articles, summarizes them using OpenAI's GPT models, and replies directly to users who message it with the keyword "news".
-
----
-
-## 🚀 Features
-
-- Scrapes the BBC News homepage to retrieve the latest headlines.
-- Summarizes full articles using OpenAI's `gpt-4o-mini` model.
-- Responds to Telegram users when they send the word "news".
-- Sends links to the original articles along with intelligent summaries.
-- Handles edge cases and errors gracefully, skipping broken or unparseable articles.
+This project creates a **smart assistant** that builds brochures for companies based on the structure and content of their websites. It uses web scraping, prompt engineering, and the OpenAI GPT model to intelligently select which web pages are most useful for a brochure.
 
 ---
 
-## 💡 How It Works
+## 🔍 What It Does
 
-1. **User Interaction**: 
-   - The user sends a message asking for `news` to the Telegram bot.
-2. **Scraping Logic**:
-   - The bot uses `requests` and `BeautifulSoup` to scrape the latest BBC articles.
-3. **Summarization**:
-   - It builds a custom prompt for each article and uses OpenAI's ChatCompletion API to generate a concise summary.
-4. **Telegram Bot API**:
-   - Built using the `python-telegram-bot` async framework to handle user interactions.
+Given a company URL, this system:
 
----
-
-## Tech Stack
-
-- Python 3.11+
-- [python-telegram-bot (v20+)](https://github.com/python-telegram-bot/python-telegram-bot)
-- [OpenAI GPT-4o](https://openai.com/)
-- `requests` and `beautifulsoup4` for web scraping
-- Async I/O for efficient message handling
-
+1. Scrapes the main content and all subpage links using `BeautifulSoup`.
+2. Crafts a **system prompt** and a **user prompt** with structured instructions.
+3. Calls the **OpenAI API** with those prompts to:
+   - Understand the site context.
+   - Choose only the most relevant subpages (e.g., About, Services, Contact).
+4. Optionally gathers content from the selected links.
+5. Constructs a brochure prompt or markdown-ready summary using the filtered information.
 
 ---
 
-## 🖼️ Demo
+## Key Concepts
 
-<p align="center">
-  <img src="demo.gif" alt="Telegram bot demo" width="800">
-</p>
+### Agentic Thinking
 
+This architecture mirrors the **agentic workflow**:
+- The assistant receives context (`Website` class).
+- It makes decisions (`link filtering`).
+- It takes actions (`fetch content`, `build brochure`).
+This is similar to how **AI agents** plan and act across multiple steps.
 
+### OpenAI API Usage
+
+The system sends **multi-turn chat messages** to GPT:
+- `system_prompt`: Sets behavior (e.g., "You are a helpful assistant for filtering links").
+- `user_prompt`: Gives specific input (e.g., site links and goal).
+This results in multiple API calls when:
+- The site is parsed.
+- Content for each subpage is gathered.
+- Final brochure summary is generated.
+
+You can choose between:
+- **One-shot prompting**: Pass all context in one go (fast, concise).
+- **Few-shot prompting**: Provide multiple examples for richer understanding (more robust).
 
 ---
 
-## Setup Instructions
+## How to Use
 
-1. **Clone this repo**:
-    ```bash
-    git clone https://github.com/yourusername/bbc-news-summary-bot.git
-    cd bbc-news-summary-bot
-    ```
-
-2. **Install dependencies**:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3. **Set up environment variables**:
-    Create a `.env` file (or manually export):
+1. Clone this repo and add your OpenAI API key to a `.env` file:
     ```env
-    TELEGRAM_BOT_TOKEN=your-telegram-bot-token
-    OPENAI_API_KEY=your-openai-api-key
+    OPENAI_API_KEY=your_key_here
     ```
 
-4. **Run the bot**:
-    ```bash
-    python bot.py
+2. Run the notebook:
+    ```python
+    from openai import OpenAI
+    from Website import Website
+
+    get_brochure_user_prompt("BBC", "https://www.bbc.com")
     ```
---- 
 
-## License
+3. Modify the prompt, model (e.g., `gpt-4o`), or link parser as needed.
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
-## Contributing
+## 💼 Positioning
 
-Pull requests and feature suggestions are welcome. For major changes, please open an issue first to discuss what you’d like to change.
+This tool can serve as:
+- A **sales assistant** for agencies building company brochures.
+- A **content strategy generator** for marketing teams.
+- A **scouting tool** for partnerships and investor research.
+- A **knowledge organizer** for product managers.
 
 ---
 
+## 👨‍💻 Requirements
 
+- Python 3.8+
+- `openai`, `beautifulsoup4`, `requests`, `dotenv`
+
+---
+
+## 📣 Contact
+
+For questions, suggestions, or collaboration ideas, reach out to me at shirinamiraslani@gmail.com.
