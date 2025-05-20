@@ -35,6 +35,9 @@ By focusing on legally accessible data (from company career pages) and keeping y
 | **Portfolio-Grade Code** | Demonstrates full-stack Python, from data processing to AI generation. |
 
 ---
+## Demo 
+![Demo](Output_gif.gif)
+
 
 ## 🛠️ Setup Instructions
 
