@@ -39,13 +39,21 @@ Users can choose between two cutting-edge models to generate the brochure:
 
 ## Gradio-Powered UI
 
-A sleek and interactive Gradio interface makes the system accessible to all:
+A user-friendly **Gradio interface** provides an intuitive front-end for seamless interaction with the system:
 
-1. Paste a company URL
-2. Click "Generate"
-3. Instantly receive a fully formatted brochure
+- **Custom Prompt Input**  
+  Users can enter a custom prompt that includes the company name and its website URL.
 
-Run it locally or deploy to the cloud — no coding required.
+- **Automatic Recognition**  
+  The system intelligently parses the prompt to extract the company name and URL.
+
+- **Model Selection**  
+  A dropdown menu lets users choose their preferred AI model (e.g., GPT-4o or Claude) for brochure generation.
+
+- **Instant Markdown Output**  
+  With a single click, the selected model generates a clean and branded marketing brochure in **Markdown format**.
+
+This browser-based tool is easy to use, requires no programming skills, and can be run locally or deployed to the cloud.
 
 ---
 
@@ -80,9 +88,8 @@ Run it locally or deploy to the cloud — no coding required.
 
 ---
 
-## Example Output
-
-> Want to see it in action? Run the app, paste a company's website, and watch your custom brochure come to life in seconds.
+## Demo 
+![Alt text](images/output.gif)
 
 ---
 
