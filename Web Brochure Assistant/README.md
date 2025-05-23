@@ -53,6 +53,8 @@ You can choose between:
 - **Few-shot prompting**: Provide multiple examples for richer understanding (more robust).
 
 ---
+## Demo 
+![Alt text](output.gif)
 
 ##  Positioning
 
