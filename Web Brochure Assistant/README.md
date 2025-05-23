@@ -10,7 +10,7 @@ This intelligent system takes a user's prompt, extracts the company's name and i
 
 - Scraping the landing page and internal links using **BeautifulSoup**
 - Analyzing which subpages matter most (e.g., *About*, *Services*, *Contact*)
-- Summarizing content using both **OpenAI GPT** and **Anthropic Claude** models
+- Summarizing content using **OpenAI GPT** or **Anthropic Claude** model
 - Curating essential information about the company
 - Generating a **Markdown-formatted brochure**, ready for investors, customers, or recruitment
 ---
