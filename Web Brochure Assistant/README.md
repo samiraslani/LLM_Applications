@@ -1,76 +1,101 @@
-# AI-Powered Website Brochure Generator
+#  AI-Powered Marketing Brochure Generator
 
-Turn any company website into a beautifully crafted brochure — intelligently, efficiently, and automatically.
-
-This system combines multi-agent reasoning, advanced LLM APIs (OpenAI & Anthropic), and a clean Gradio-based interface to build **structured markdown brochures** for companies. It's perfect for marketing, onboarding, investor relations, or recruiting.
+**Turn any company website into a beautifully structured marketing brochure in seconds — powered by multi-agent AI intelligence.**
 
 ---
 
-## ✨ Features
+##  What It Does
 
--  **Automated Link Filtering**  
-  Smart internal link selection using vector-based semantic relevance.
+This intelligent system takes a single input — a company URL — and produces a tailored Markdown brochure by automatically:
 
--  **Multi-Agent LLM Coordination**  
-  Combines OpenAI and Anthropic models to generate and refine brochure content through collaborative reasoning.
+- Scraping the landing page and internal links using **BeautifulSoup**
+- Analyzing which subpages matter most (e.g., *About*, *Services*, *Contact*)
+- Summarizing content using both **OpenAI GPT** and **Anthropic Claude** models
+- Curating essential information about the company
+- Generating a **Markdown-formatted brochure**, ready for investors, customers, or recruitment
 
--  **Multi-Modal Capabilities**  
-  Images and visuals are integrated into the brochure for a professional touch.
-
--  **Live Gradio Frontend**  
-  User-friendly interface to preview, edit, and download your brochure.
+It’s like having a **marketing team**, **web crawler**, and **copywriter** in one seamless AI workflow.
 
 ---
 
-##  Requirements
+## Key Strengths
 
-- Python 3.8+
-- OpenAI API key
-- Anthropic API key
-- Install dependencies:
+### Multi-Agent Architecture
 
-```bash
-pip install -r requirements.txt
+This system is more than a simple scraper or summarizer. It acts like a **goal-oriented AI agent**:
 
----
+- **It plans**: Identifies the most useful subpages from a sea of links.
+- **It acts**: Visits only the filtered, relevant links.
+- **It thinks**: Summarizes information using multiple AI models.
+- **It creates**: Generates a clean, concise brochure in Markdown.
 
-### OpenAI API Usage
+Reflects **cutting-edge agentic design**, coordinating multiple steps toward a unified objective.
 
-The system communicates with GPT using **multi-turn chat messages**:
+### Multi-Model Reasoning
 
-- `system_prompt`: Defines behavior (e.g., *“You are a helpful assistant for filtering links”*).
-- `user_prompt`: Provides detailed input (e.g., list of links, desired brochure format).
+Combines the best of both worlds with two leading LLMs:
 
-This results in **multiple API calls** during:
+- **OpenAI GPT-4o** (via `openai`)
+- **Anthropic Claude** (via `anthropic`)
 
-- Link filtering phase (deciding which pages matter).
-- Brochure generation phase (writing the actual content in markdown).
-
-You can choose between:
-- **One-shot prompting**: Pass all context in one go (fast, concise).
-- **Few-shot prompting**: Provide multiple examples for richer understanding (more robust).
-
----
-## Demo 
-<img src="output.gif" width="300"/>
-
-
-##  Positioning
-
-This tool can serve as:
-- A **sales assistant** for agencies building company brochures.
-- A **content strategy generator** for marketing teams.
-- A **scouting tool** for partnerships and investor research.
+This hybrid approach delivers more **accurate**, **insightful**, and **human-sounding** summaries.
 
 ---
 
-##  Requirements
+## Gradio-Powered UI
 
-- Python 3.8+
-- `openai`, `beautifulsoup4`, `requests`, `dotenv`
+A sleek and interactive Gradio interface makes the system accessible to all:
+
+1. Paste a company URL
+2. Click "Generate"
+3. Instantly receive a fully formatted brochure
+
+Run it locally or deploy to the cloud — no coding required.
 
 ---
 
-##  Contact
+## How It Works
 
-For questions, suggestions, or collaboration ideas, reach out to me at shirinamiraslani@gmail.com.
+### Step-by-Step Agent Workflow
+
+1. **Website Class**  
+   Scrapes body text and collects internal hyperlinks.
+
+2. **Link Filtering Prompt**  
+   GPT-4o acts as a filtering agent to identify the most relevant subpages.
+
+3. **Content Extraction**  
+   Scrapes and cleans text from selected links.
+
+4. **Prompt Engineering**  
+   Custom prompts guide content summarization in a consistent and branded tone.
+
+5. **Brochure Generation**  
+   The assistant (OpenAI or Claude) assembles a polished Markdown brochure.
+
+---
+
+## Tech Stack
+
+- **[OpenAI](https://openai.com)** — GPT-4o via Chat Completions API
+- **[Anthropic](https://www.anthropic.com/)** — Claude API integration
+- **[BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/)** — HTML parsing and scraping
+- **[Gradio](https://gradio.app/)** — Browser-based UI framework
+- **`dotenv`, `requests`, `json`** — Supporting packages for configuration and stability
+
+---
+
+## Example Output
+
+> Want to see it in action? Run the app, paste a company's website, and watch your custom brochure come to life in seconds.
+
+---
+
+## Contributions & Feedback
+
+Contributions, feature suggestions, and feedback are always welcome! Feel free to open an issue or submit a pull request.
+
+---
+## License
+
+MIT License — see `LICENSE.md` for details.
