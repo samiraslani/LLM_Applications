@@ -54,7 +54,8 @@ You can choose between:
 
 ---
 ## Demo 
-![Alt text](output.gif)
+<img src="output.gif" width="800"/>
+
 
 ##  Positioning
 
