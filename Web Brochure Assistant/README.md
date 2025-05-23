@@ -78,6 +78,10 @@ This browser-based tool is easy to use, requires no programming skills, and can 
 
 ---
 
+## Demo 
+![Alt text](output.gif)
+
+---
 ## Tech Stack
 
 - **[OpenAI](https://openai.com)** — GPT-4o via Chat Completions API
@@ -85,12 +89,6 @@ This browser-based tool is easy to use, requires no programming skills, and can 
 - **[BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/)** — HTML parsing and scraping
 - **[Gradio](https://gradio.app/)** — Browser-based UI framework
 - **`dotenv`, `requests`, `json`** — Supporting packages for configuration and stability
-
----
-
-## Demo 
-![Alt text](images/output.gif)
-
 ---
 
 ## Contributions & Feedback
