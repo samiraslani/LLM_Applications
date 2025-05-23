@@ -6,7 +6,7 @@
 
 ##  What It Does
 
-This intelligent system takes a two inputs, a company's name and its URL, and produces a tailored Markdown brochure by automatically:
+This intelligent system takes a user's prompt, extracts the company's name and its URL, and produces a tailored Markdown brochure by automatically:
 
 - Scraping the landing page and internal links using **BeautifulSoup**
 - Analyzing which subpages matter most (e.g., *About*, *Services*, *Contact*)
