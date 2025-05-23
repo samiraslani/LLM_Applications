@@ -27,6 +27,11 @@ This intelligent system transforms a simple user prompt, containing a company na
    The system assembles the curated content into a polished, **Markdown-formatted brochure**. 
 ---
 
+## Demo 
+![Alt text](output.gif)
+
+---
+
 ## Key Strengths
 
 ### Multi-Agent Architecture
@@ -40,6 +45,7 @@ This system is more than a simple scraper or summarizer. It acts like a **goal-o
 
 Reflects **cutting-edge agentic design**, coordinating multiple steps toward a unified objective.
 
+---
 ### Multi-Model Reasoning
 
 Users can choose between two cutting-edge models to generate the brochure: 
@@ -55,10 +61,6 @@ A user-friendly **Gradio interface** provides an intuitive front-end for seamles
 
 ---
 
-## Demo 
-![Alt text](output.gif)
-
----
 ## Tech Stack
 
 - **[OpenAI](https://openai.com)** — GPT-4o via Chat Completions API
