@@ -6,33 +6,39 @@ This project builds a **smart assistant** that generates professional brochures 
 
 ## 🔍 What It Does
 
-Given a company URL, the system:
+# AI-Powered Website Brochure Generator
 
-1. Scrapes the main content and subpage links using `BeautifulSoup`.
-2. Constructs structured prompts:
-   - **System prompt**: Sets the assistant's behavior.
-   - **User prompt**: Supplies specific task instructions and content.
-3. Uses the **OpenAI GPT API** to:
-   - Understand the site's context.
-   - Select only the most relevant subpages (e.g., About, Services, Contact).
-4. Optionally fetches and processes content from the selected subpages.
-5. Generates a **markdown brochure** using the curated content.
+Turn any company website into a beautifully crafted brochure — intelligently, efficiently, and automatically.
+
+This system combines multi-agent reasoning, advanced LLM APIs (OpenAI & Anthropic), and a clean Gradio-based interface to build **structured markdown brochures** for companies. It's perfect for marketing, onboarding, investor relations, or recruiting.
 
 ---
 
-## Key Concepts
+## ✨ Features
 
-### Agentic Thinking
+-  **Automated Link Filtering**  
+  Smart internal link selection using vector-based semantic relevance.
 
-The architecture mirrors an **agent-like workflow**:
+-  **Multi-Agent LLM Coordination**  
+  Combines OpenAI and Anthropic models to generate and refine brochure content through collaborative reasoning.
 
-- The assistant receives context using a `Website` class.
-- It extracts and evaluates all internal links from the main website.
-- It **decides** which links are useful for brochure generation (link filtering).
-- It takes **actions** by fetching and summarizing content from those relevant links.
-- It **generates** a final brochure based on the gathered information.
+-  **Multi-Modal Capabilities**  
+  Images and visuals are integrated into the brochure for a professional touch.
 
-This mimics how **AI agents** plan and act in multiple steps toward a goal.
+-  **Live Gradio Frontend**  
+  User-friendly interface to preview, edit, and download your brochure.
+
+---
+
+##  Requirements
+
+- Python 3.8+
+- OpenAI API key
+- Anthropic API key
+- Install dependencies:
+
+```bash
+pip install -r requirements.txt
 
 ---
 
