@@ -4,7 +4,7 @@
 
 ##  How It Works
 
-This intelligent system transforms a simple user prompt—containing a company name and its URL into a tailored, well-structured **Markdown brochure** using a multi-step agentic workflow:
+This intelligent system transforms a simple user prompt, containing a company name and its URL into a tailored, well-structured **Markdown brochure** using a multi-step agentic workflow:
 
 ### End-to-End Process
 
