@@ -1,11 +1,3 @@
-# 📄 Web Brochure Assistant using OpenAI GPT
-
-This project builds a **smart assistant** that generates professional brochures for companies based on the structure and content of their websites. It combines **web scraping**, **prompt engineering**, and the **OpenAI GPT model** to intelligently select the most relevant web pages for brochure content.
-
----
-
-## 🔍 What It Does
-
 # AI-Powered Website Brochure Generator
 
 Turn any company website into a beautifully crafted brochure — intelligently, efficiently, and automatically.
