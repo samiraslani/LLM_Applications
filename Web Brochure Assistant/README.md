@@ -52,31 +52,11 @@ Users can choose between two cutting-edge models to generate the brochure:
 ## Gradio-Powered UI
 
 A user-friendly **Gradio interface** provides an intuitive front-end for seamless interaction with the system:
+
 ---
 
 ## Demo 
 ![Alt text](output.gif)
-
---- 
-
-## How It Works
-
-### Step-by-Step Agent Workflow
-
-1. **Website Class**  
-   Scrapes body text and collects internal hyperlinks.
-
-2. **Link Filtering Prompt**  
-   GPT-4o acts as a filtering agent to identify the most relevant subpages.
-
-3. **Content Extraction**  
-   Scrapes and cleans text from selected links.
-
-4. **Prompt Engineering**  
-   Custom prompts guide content summarization in a consistent and branded tone.
-
-5. **Brochure Generation**  
-   The assistant (OpenAI or Claude) assembles a polished Markdown brochure.
 
 ---
 ## Tech Stack
