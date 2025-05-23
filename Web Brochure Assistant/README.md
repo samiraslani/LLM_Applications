@@ -54,7 +54,7 @@ You can choose between:
 
 ---
 ## Demo 
-<img src="output.gif" width="800"/>
+<img src="output.gif" width="300"/>
 
 
 ##  Positioning
