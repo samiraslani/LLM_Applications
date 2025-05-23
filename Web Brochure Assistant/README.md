@@ -28,7 +28,7 @@ This intelligent system transforms a simple user prompt, containing a company na
 ---
 
 ## Demo 
-<img src="output.gif" alt="Demo" width="600"/>
+<img src="output.gif" alt="Demo" width="800"/>
 
 ---
 
