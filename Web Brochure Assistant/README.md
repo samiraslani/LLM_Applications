@@ -13,9 +13,6 @@ This intelligent system takes a two inputs, a company's name and its URL, and pr
 - Summarizing content using both **OpenAI GPT** and **Anthropic Claude** models
 - Curating essential information about the company
 - Generating a **Markdown-formatted brochure**, ready for investors, customers, or recruitment
-
-It’s like having a **marketing team**, **web crawler**, and **copywriter** in one seamless AI workflow.
-
 ---
 
 ## Key Strengths
@@ -33,12 +30,10 @@ Reflects **cutting-edge agentic design**, coordinating multiple steps toward a u
 
 ### Multi-Model Reasoning
 
-Combines the best of both worlds with two leading LLMs:
+Users can choose between two cutting-edge models to generate the brochure: 
 
 - **OpenAI GPT-4o** (via `openai`)
 - **Anthropic Claude** (via `anthropic`)
-
-This hybrid approach delivers more **accurate**, **insightful**, and **human-sounding** summaries.
 
 ---
 
